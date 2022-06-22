@@ -1,4 +1,4 @@
-package by.epam.java_introduction.module1;
+package by.epam.java_introduction.module1.linear;
 
 // Вычислить значение выражения по формуле (все переменные принимают действительные значения):
 // (b + square_root((b^2) + 4ac)) / 2a - a^3 * c + b^(-2)
@@ -6,6 +6,7 @@ package by.epam.java_introduction.module1;
 import java.util.Scanner;
 
 public class Linear2 {
+
 
     public static void main(String[] args) {
 
@@ -30,6 +31,7 @@ public class Linear2 {
             c = enterDoubleFromConsole("Введите значение c");
 
             temp = Math.pow(b, 2) + 4 * a * c;
+
         }
 
         temp = (Math.sqrt(temp) + b) / (2 * a);
@@ -40,6 +42,7 @@ public class Linear2 {
         System.out.println("при b = " + b);
         System.out.println("при c = " + c);
         System.out.printf("равняется %f", temp);
+
     }
 
     public static double enterDoubleFromConsole(String message) {
@@ -51,13 +54,17 @@ public class Linear2 {
         System.out.println(message);
 
         while (!sc.hasNextDouble()) {
+
             sc.next();
             System.out.println("Введено некорректное значение");
             System.out.println(message);
+
         }
 
         value = sc.nextDouble();
 
         return value;
+
     }
+
 }

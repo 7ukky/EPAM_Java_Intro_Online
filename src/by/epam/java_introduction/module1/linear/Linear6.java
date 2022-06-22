@@ -1,4 +1,4 @@
-package by.epam.java_introduction.module1;
+package by.epam.java_introduction.module1.linear;
 
 // Для заданной области составить линейную программу, которая печатает true, если точка с координатами (х, у)
 // принадлежит закрашенной области, и false — в противном случае.
@@ -6,6 +6,7 @@ package by.epam.java_introduction.module1;
 import java.util.Scanner;
 
 public class Linear6 {
+
 
     public static void main(String[] args) {
 
@@ -20,7 +21,9 @@ public class Linear6 {
         isIncluded = (((Math.abs(x) < 3) && (y < 5 && y > -4)) || ((Math.abs(x) < 5) && (y < 1 && y > -4)));
 
         System.out.println(isIncluded);
+
     }
+
 
     public static int enterIntFromConsole(String message) {
 
@@ -31,13 +34,17 @@ public class Linear6 {
         System.out.println(message);
 
         while (!sc.hasNextInt()) {
+
             sc.next();
             System.out.println("Введено некорректное значение");
             System.out.println(message);
+
         }
 
         value = sc.nextInt();
 
         return value;
+
     }
+
 }

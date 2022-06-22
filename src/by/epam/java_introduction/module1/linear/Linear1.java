@@ -1,10 +1,11 @@
-package by.epam.java_introduction.module1;
+package by.epam.java_introduction.module1.linear;
 
 // Найдите значение функции: z = ( (a – 3 ) * b / 2) + c.
 
 import java.util.Scanner;
 
 public class Linear1 {
+
 
     public static void main(String[] args) {
 
@@ -25,7 +26,9 @@ public class Linear1 {
         System.out.println("при b = " + b);
         System.out.println("при c = " + c);
         System.out.printf("равняется %.4f", z);
+
     }
+
 
     public static double enterDoubleFromConsole(String message) {
 
@@ -36,14 +39,18 @@ public class Linear1 {
         System.out.println(message);
 
         while (!sc.hasNextDouble()) {
+
             sc.next();
             System.out.println("Введено некорректное значение");
             System.out.println(message);
+
         }
 
         value = sc.nextDouble();
 
         return value;
+
     }
+
 }
 

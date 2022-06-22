@@ -1,9 +1,10 @@
-package by.epam.java_introduction.module1;
+package by.epam.java_introduction.module1.linear;
 
 // Дано действительное число R вида nnn.ddd (три цифровых разряда в дробной и целой частях). Поменять местами
 // дробную и целую части числа и вывести полученное значение числа.
 
 public class Linear4 {
+
 
     public static void main(String[] args) {
 
@@ -17,5 +18,7 @@ public class Linear4 {
         r = temp1 + temp2;
 
         System.out.println("Результат перестановки местами целой и дробной частей числа: " + r);
+
     }
+
 }

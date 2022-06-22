@@ -1,4 +1,4 @@
-package by.epam.java_introduction.module1;
+package by.epam.java_introduction.module1.linear;
 
 // Дано натуральное число Т, которое представляет длительность прошедшего времени в секундах. Вывести
 // данное значение длительности в часах, минутах и секундах в следующей форме:
@@ -7,6 +7,7 @@ package by.epam.java_introduction.module1;
 import java.util.Scanner;
 
 public class Linear5 {
+
 
     public static void main(String[] args) {
 
@@ -26,7 +27,9 @@ public class Linear5 {
         seconds = t - minutes * 60;
 
         System.out.println(hours + "ч " + minutes + "мин " + seconds + "c");
+
     }
+
 
     public static int enterIntFromConsole(String message) {
 
@@ -37,13 +40,17 @@ public class Linear5 {
         System.out.println(message);
 
         while (!sc.hasNextInt()) {
+
             sc.next();
             System.out.println("Введено некорректное значение");
             System.out.println(message);
+
         }
 
         value = sc.nextInt();
 
         return value;
+
     }
+
 }

@@ -1,4 +1,4 @@
-package by.epam.java_introduction.module1;
+package by.epam.java_introduction.module1.linear;
 
 // Вычислить значение выражения по формуле (все переменные принимают действительные значения):
 // (sin(x) + cos(y)) / (cos(x) - sin(y)) * tg(xy)
@@ -6,6 +6,7 @@ package by.epam.java_introduction.module1;
 import java.util.Scanner;
 
 public class Linear3 {
+
 
     public static void main(String[] args) {
 
@@ -27,6 +28,7 @@ public class Linear3 {
             y = enterDoubleFromConsole("Введите значение y в градусах");
 
             temp = Math.cos(x) - Math.sin(y);
+
         }
 
         temp = (Math.sin(x) + Math.cos(y)) / temp;
@@ -36,7 +38,9 @@ public class Linear3 {
         System.out.println("при x = " + x);
         System.out.println("при y = " + y);
         System.out.printf("равняется %.4f", temp);
+
     }
+
 
     public static double enterDoubleFromConsole(String message) {
 
@@ -47,13 +51,17 @@ public class Linear3 {
         System.out.println(message);
 
         while (!sc.hasNextDouble()) {
+
             sc.next();
             System.out.println("Введено некорректное значение");
             System.out.println(message);
+
         }
 
         value = sc.nextDouble();
 
         return value;
+
     }
+
 }
