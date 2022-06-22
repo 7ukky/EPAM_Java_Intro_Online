@@ -1,4 +1,4 @@
-package by.epam.java_introduction.module1;
+package by.epam.java_introduction.module1.cycle;
 
 // Для каждого натурального числа в промежутке от m до n вывести все делители, кроме единицы и самого числа.
 // m и n вводятся с клавиатуры.
@@ -35,15 +35,21 @@ public class Cycle7 {
 
                     hasDivider = true;
                     System.out.println(j + " ");
+
                 }
+
             }
 
             if (!hasDivider) {
 
                 System.out.println("не имеет");
+
             }
+
         }
+
     }
+
 
     public static int enterPositiveIntFromConsole(String message) {
 
@@ -60,6 +66,7 @@ public class Cycle7 {
                 sc.next();
                 System.out.println("Введено некорректное значение");
                 System.out.println(message);
+
             }
 
             value = sc.nextInt();
@@ -67,11 +74,14 @@ public class Cycle7 {
             if (value <= 0) {
 
                 System.out.println("Введено ненатуральное число");
+
             }
+
         }
         while (value <= 0);
 
-
         return value;
+
     }
+
 }

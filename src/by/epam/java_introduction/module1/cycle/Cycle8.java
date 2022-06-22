@@ -1,8 +1,10 @@
-package by.epam.java_introduction.module1;
+package by.epam.java_introduction.module1.cycle;
 
 // Даны два числа. Определить цифры, входящие в запись как первого так и второго числа.
 
 public class Cycle8 {
+
+
     public static void main(String[] args) {
 
         int a = 111;
@@ -31,6 +33,7 @@ public class Cycle8 {
             temp = length_a;
             length_a = length_b;
             length_b = temp;
+
         }
 
         for (i = 0; i < length_a; i++) {
@@ -45,15 +48,21 @@ public class Cycle8 {
 
                     System.out.println(temp_a);
                     break;
+
                 }
 
                 else {
+
                     temp_b /= 10;
+
                 }
+
             }
 
             a /= 10;
+
         }
+
     }
 
     public static int getNumberLength(int number) {
@@ -63,14 +72,18 @@ public class Cycle8 {
         if (number == 0) {
 
             return 1;
+
         }
 
         while (number != 0) {
 
             number /= 10;
             length++;
+
         }
 
         return length;
+
     }
+
 }
