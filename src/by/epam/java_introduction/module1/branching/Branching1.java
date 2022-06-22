@@ -1,4 +1,4 @@
-package by.epam.java_introduction.module1;
+package by.epam.java_introduction.module1.branching;
 
 // Даны два угла треугольника (в градусах). Определить, существует ли такой треугольник, и если да, то будет ли
 // он прямоугольным.
@@ -6,6 +6,7 @@ package by.epam.java_introduction.module1;
 import java.util.Scanner;
 
 public class Branching1 {
+
 
     public static void main(String[] args) {
 
@@ -24,18 +25,26 @@ public class Branching1 {
 
                 System.out.println("Треугольник с углами " + angle1 + " и " + angle2 + " градусов существует");
                 System.out.println("и является прямоугольным");
+
             }
+
             else {
 
                 System.out.println("Треугольник с углами " + angle1 + " и " + angle2 + " градусов существует");
                 System.out.println("и не является прямоугольным");
+
             }
+
         }
+
         else {
 
             System.out.println("Треугольник с углами " + angle1 + " и " + angle2 + " градусов не существует");
+
         }
+
     }
+
 
     public static int enterIntFromConsole(String message) {
 
@@ -46,13 +55,17 @@ public class Branching1 {
         System.out.println(message);
 
         while (!sc.hasNextInt()) {
+
             sc.next();
             System.out.println("Введено некорректное значение");
             System.out.println(message);
+
         }
 
         value = sc.nextInt();
 
         return value;
+
     }
+
 }
