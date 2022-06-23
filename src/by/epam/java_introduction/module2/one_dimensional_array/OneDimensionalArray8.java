@@ -20,7 +20,7 @@ public class OneDimensionalArray8 {
     }
 
 
-    private static void printArrayWithoutMinElement(int[] array) {
+    public static void printArrayWithoutMinElement(int[] array) {
 
         if (array == null) {
 

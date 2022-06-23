@@ -20,7 +20,7 @@ public class OneDimensionalArray7 {
     }
 
 
-    private static void printMaxValue(int[] array) {
+    public static void printMaxValue(int[] array) {
 
         if (array == null) {
 

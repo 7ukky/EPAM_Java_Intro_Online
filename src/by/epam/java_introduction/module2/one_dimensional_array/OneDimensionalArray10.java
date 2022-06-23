@@ -21,7 +21,7 @@ public class OneDimensionalArray10 {
     }
 
 
-    private static void printCompressedArray(int[] array) {
+    public static void printCompressedArray(int[] array) {
 
         if (array == null) {
 
