@@ -41,7 +41,7 @@ public class Decomposition5 {
 
     }
 
-    private static int getMaxValueFromArray(int[] array) {
+    public static int getMaxValueFromArray(int[] array) {
 
         int maxValue;
 

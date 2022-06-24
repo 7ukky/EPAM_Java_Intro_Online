@@ -8,8 +8,8 @@ public class Decomposition1 {
 
     public static void main(String[] args) {
 
-        int a = 30;
-        int b = 18;
+        int a = 3;
+        int b = 9;
 
         int gcd;
         int lcm;
@@ -30,7 +30,7 @@ public class Decomposition1 {
     }
 
 
-    private static int getLeastCommonMultiple(int a, int b) {
+    public static int getLeastCommonMultiple(int a, int b) {
 
         int lcm;
         int gcd;
@@ -44,7 +44,7 @@ public class Decomposition1 {
     }
 
 
-    private static int getGreatestCommonDivisor(int a, int b) {
+    public static int getGreatestCommonDivisor(int a, int b) {
 
         if (a <= 0 || b <= 0) {
 

@@ -24,7 +24,7 @@ public class Decomposition3 {
     }
 
 
-    private static double getSquareOfRegularHexagon(double side) {
+    public static double getSquareOfRegularHexagon(double side) {
 
         if (side <= 0) {
 
@@ -42,7 +42,7 @@ public class Decomposition3 {
     }
 
 
-    private static double getSquareOfEquilateralTriangle(double side) {
+    public static double getSquareOfEquilateralTriangle(double side) {
 
         double square;
 

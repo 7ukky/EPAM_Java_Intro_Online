@@ -27,7 +27,7 @@ public class Decomposition2 {
     }
 
 
-    private static int getGreatestCommonDivisor(int a, int b) {
+    public static int getGreatestCommonDivisor(int a, int b) {
 
         if (a <= 0 || b <= 0) {
 
@@ -59,7 +59,7 @@ public class Decomposition2 {
     }
 
 
-    private static int getGreatestCommonDivisor(int a, int b, int c, int d) {
+    public static int getGreatestCommonDivisor(int a, int b, int c, int d) {
 
         int temp1;
         int temp2;
