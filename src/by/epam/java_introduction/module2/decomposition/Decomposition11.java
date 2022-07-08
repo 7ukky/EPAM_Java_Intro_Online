@@ -27,7 +27,7 @@ public class Decomposition11 {
     }
 
 
-    private static int compare(int num1, int num2) {
+    public static int compare(int num1, int num2) {
 
         if (num1 == 0 || num2 == 0) {
 
@@ -54,7 +54,7 @@ public class Decomposition11 {
     }
 
 
-    private static int getSize(int num) {
+    public static int getSize(int num) {
 
         int counter = 0;
         int temp;

@@ -18,7 +18,7 @@ public class Decomposition10 {
     }
 
 
-    private static void printArray(int[] array) {
+    public static void printArray(int[] array) {
 
         for (int j : array) {
 
@@ -53,7 +53,7 @@ public class Decomposition10 {
     }
 
 
-    private static int getSize(int num) {
+    public static int getSize(int num) {
 
         int counter = 0;
         int temp;
