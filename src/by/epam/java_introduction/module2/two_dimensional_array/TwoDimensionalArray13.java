@@ -1,10 +1,10 @@
 package by.epam.java_introduction.module2.two_dimensional_array;
 
-// Отсортировать строки матрицы по возрастанию и убыванию значений элементов.
+// Отсортировать столбцы матрицы по возрастанию и убыванию значений элементов.
 
 import java.util.Random;
 
-public class TwoDimensionalArray12 {
+public class TwoDimensionalArray13 {
 
     public static void main(String[] args) {
 
@@ -13,49 +13,72 @@ public class TwoDimensionalArray12 {
 
         initMatrix(matrix);
 
-        sortMatrixLinesAscending(matrix);
-        sortMatrixLinesDescending(matrix);
+        sortMatrixColumnsAscending(matrix);
+        sortMatrixColumnsDescending(matrix);
 
     }
 
 
-    public static void sortMatrixLinesDescending(int[][] initialMatrix) {
+    public static void sortMatrixColumnsDescending(int[][] initialMatrix) {
 
         int length = initialMatrix.length;
 
-        int[] line;
+        int[] column = new int[length];
         int[][] matrix = new int[length][length];
+
 
         for (int i = 0; i < length; i++) {
 
-            line = initialMatrix[i].clone();
-            sortArrayDescending(line);
-            matrix[i] = line;
+            for (int j = 0; j < length; j++) {
+
+                column[j] = initialMatrix[j][i];
+
+            }
+
+            sortArrayDescending(column);
+
+            for (int k = 0; k < length; k++) {
+
+                matrix[k][i] = column[k];
+
+            }
 
         }
 
-        System.out.println("\nМатрица с отсортированными по убыванию строками:");
+        System.out.println("\nМатрица с отсортированными по убыванию столбцами:");
         printMatrix(matrix);
 
     }
 
 
-    public static void sortMatrixLinesAscending(int[][] initialMatrix) {
+    public static void sortMatrixColumnsAscending(int[][] initialMatrix) {
 
         int length = initialMatrix.length;
 
-        int[] line;
+        int[] column = new int[length];
         int[][] matrix = new int[length][length];
+
 
         for (int i = 0; i < length; i++) {
 
-            line = initialMatrix[i].clone();
-            sortArrayAscending(line);
-            matrix[i] = line;
+
+            for (int j = 0; j < length; j++) {
+
+                column[j] = initialMatrix[j][i];
+
+            }
+
+            sortArrayAscending(column);
+
+            for (int k = 0; k < length; k++) {
+
+                matrix[k][i] = column[k];
+
+            }
 
         }
 
-        System.out.println("\nМатрица с отсортированными по возрастанию строками:");
+        System.out.println("\nМатрица с отсортированными по возрастанию столбцами:");
         printMatrix(matrix);
 
     }
