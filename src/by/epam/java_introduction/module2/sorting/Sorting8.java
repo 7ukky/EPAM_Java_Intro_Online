@@ -169,7 +169,7 @@ public class Sorting8 {
                 System.out.print(array[i].denominator + " ");
 
             }
-            else if (array[i].numerator > 9) {
+            else if (array[i].denominator > 9) {
 
                 System.out.print(array[i].denominator + "  ");
 
