@@ -10,8 +10,8 @@ public class Sorting2 {
 
     public static void main(String[] args) {
 
-        int[] array1 = new int[5];
-        int[] array2 = new int[5];
+        int[] array1 = new int[6];
+        int[] array2 = new int[7];
         int[] resultArray;
 
         initAscendingArray(array1);
@@ -45,27 +45,51 @@ public class Sorting2 {
         }
 
 
-        int length;
-        int[] array;
+        int resultLength;
+        int[] resultArray;
 
-        length = array1.length + array2.length;
-        array = new int[length];
 
-        for (int i = 0; i < array1.length; i++) {
+        resultLength = array1.length + array2.length;
+        resultArray = new int[resultLength];
 
-            array[i] = array1[i];
+        int i = 0, j = 0;
+
+        while (i < array1.length && j < array2.length) {
+
+            if (array1[i] <= array2[j]) {
+
+                resultArray[i + j] = array1[i];
+                i++;
+            }
+            else {
+
+                resultArray[i + j] = array2[j];
+                j++;
+
+            }
 
         }
 
-        for (int i = 0; i < array2.length; i++) {
+        if (i == array1.length) {
 
-            array[i + array1.length] = array2[i];
+            for (; j < array2.length; j++) {
+
+                resultArray[i + j] = array2[j];
+
+            }
+
+        }
+        else {
+
+            for (; i < array1.length; i++) {
+
+                resultArray[i + j] = array1[i];
+
+            }
 
         }
 
-        sortAscending(array);
-
-        return array;
+        return resultArray;
 
     }
 
