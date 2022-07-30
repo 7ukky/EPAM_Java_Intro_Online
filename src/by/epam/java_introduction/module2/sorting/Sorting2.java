@@ -60,6 +60,7 @@ public class Sorting2 {
 
                 resultArray[i + j] = array1[i];
                 i++;
+
             }
             else {
 
