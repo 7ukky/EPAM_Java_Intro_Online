@@ -2,4 +2,5 @@
 Описание каталогов:
 * module1 – хранит решения задач первого модуля "Basics of software code development"
 * module2 – хранит решения задач второго модуля "Algorithmization"
-* module3 – хранит решения задач третьего модуля "Programming with classes"
+* module3 – хранит решения задач третьего модуля "Strings and basics of text processing"
+* module4 – хранит решения задач третьего модуля "Programming with classes"
