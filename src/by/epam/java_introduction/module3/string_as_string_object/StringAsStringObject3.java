@@ -19,20 +19,9 @@ public class StringAsStringObject3 {
 
     public static boolean isPalindrome(String line) {
 
-        String forwardLine = line.toLowerCase();
         StringBuilder reverseLine = new StringBuilder(line.toLowerCase()).reverse();
 
-        for (int i = 0; i < line.length(); i++) {
-
-            if (!(reverseLine.charAt(i) == forwardLine.charAt(i))) {
-
-                return false;
-
-            }
-
-        }
-
-        return true;
+        return String.valueOf(reverseLine).equalsIgnoreCase(line);
 
     }
 
